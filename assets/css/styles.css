@@ -1,0 +1,389 @@
+
+html{
+    padding: 0;
+    width: 100vw;
+}
+
+body {
+    font-family: "Open Sans", sans-serif !important;
+    font-weight: normal;
+    font-size: 1rem;
+    width: 100vw;
+}
+
+.cont {
+    padding: .5rem 10%;
+    margin: 0;
+    width: 100vw;
+}
+
+.head {
+    padding: 0;
+    display:grid;
+    position: relative;
+    grid-template: 2fr 2fr 1fr / auto;
+    align-items: center;
+    height: 850px;
+    width: 100%;
+    border-bottom: 1px solid #75F5C4;
+    box-shadow: 0px 15px 20px -15px #75F5C4;
+
+}
+
+.head > * {
+    padding: 0 20%;
+    color: white;
+    text-shadow: 0 0 20px black;
+    letter-spacing: 5px;
+}
+
+.head .bg-image {
+    background: center url(../images/head-bg-blue2.jpg);
+    background-size: cover;
+    height: 100%;
+    grid-area: 1 / 1 / 4 / -1;
+    z-index: -1; 
+}
+
+.head h4 {
+    font-size: 2rem;
+    font-weight: bold;
+    grid-area: 1 / 1 / 2 / 2;
+    letter-spacing: 4px;
+}
+
+.head h1 {
+    align-self: flex-start;
+    font-weight: bold;
+    font-size: 4rem;
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.main-body {
+    padding-left: 0;
+    padding-right: 0;
+}
+.main-body .sect {
+    justify-content: center;
+    padding: 0 10%;
+}
+
+.main-body .about-me {
+    display: grid;
+    font-size: 1rem;
+    height: auto;
+    grid-template: 1fr 1fr / 100%;
+    border-bottom: 1px solid #A7E6FF;
+    box-shadow: 0px 15px 20px -15px #A7E6FF;
+    align-items: center;
+    padding: 7rem;
+    padding-top: 10rem !important;
+    padding-bottom: 6rem !important;
+}
+
+.about-me .bg-image {
+    background-color: blue;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 50%;
+    margin: auto;
+    padding: 10px;
+}
+
+.about-me .profile-pic {
+    border-radius: 50%;
+    height: 200px;
+    margin: auto;
+}
+
+.gradient-background {
+    background: linear-gradient(2000deg, #A7E6FF, #3ABEF9, #3572EF, #050C9C);
+    background-size: 180% 180%;
+    animation: gradient-animation 3s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+.about-me p {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    line-height: 35px;
+    margin: 1rem 8rem;
+    width: 47%;
+    margin: auto;
+    margin-top: 40px;
+    min-width: 400px;
+}
+
+.main-body  .my-skills {
+    display: block;
+    padding: 7rem 10%;
+}
+
+.my-skills h2 {
+    font-size: 2.3rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 40px 0;
+    margin-bottom: 50px;
+    letter-spacing: 3px;
+}
+
+.skill-card-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.skill-card {
+    display: grid;
+    grid-template: 1fr 3fr / auto 3fr;
+    padding: 0 20px 0 0;
+    width: 300px;
+    height: auto;
+}
+
+.skill-card h3{
+    text-align: bottom;
+    align-self: center;
+    margin: 0;
+    text-wrap: nowrap;
+}
+
+.skill-card p {
+    margin: 5px 0 0 0;
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.skill-card .icon {
+    align-self: center;
+    margin-right: 10px;
+    height: 28px;
+
+}
+
+.main-body .my-resume {
+    padding-left: 0;
+    padding-right: 0;
+    display: grid;
+    width: 100%;
+    max-height: 350px;
+    min-height: 300px;
+    align-items: start;
+    overflow: hidden;
+    box-shadow: 15px 0 5px -2px black;
+    grid-template: 350px / 70% 30%;
+}
+
+.main-body .my-resume .bg-image-cont {
+    width: 100%;
+}
+
+.main-body .my-resume .bg-image-cont .bg-image {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    min-height: 350px;
+    min-width: 520px;
+}
+
+.main-body .my-resume .resume-link-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+    align-items: start;
+    text-align: left;
+    min-height: 350px;
+    padding: 0 20px;
+    width: 100%;
+ }
+
+
+
+.main-body .my-projects {
+    padding: 7rem 0;
+}
+
+.my-projects h2 {
+    font-size: 2.3rem;
+    text-align: center;
+    font-weight: bold;
+    margin: 70px 0;
+    margin-top: 40px;
+}
+
+.my-projects ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    gap: 35px;
+    width: 1000px;
+    margin: auto;
+}
+
+.my-projects ul li {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-basis: 450px;
+}
+
+
+.proj-card .proj-preview {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+}
+
+.proj-preview .preview {
+    object-fit: cover;
+    height: 150px;
+}
+
+.proj-card .proj-desc {
+    padding-left: 30px; 
+}
+
+.foo {
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: .8rem;
+    background: top url("../images/footer-bg.jpg");
+    background-size: cover;
+    color: white;
+}
+
+.foo .github-logo {
+    height: 30px;
+}
+
+
+
+/*FIXED STYLES*/
+@media (max-width: 1230px){
+    
+    .main-body .my-resume {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .main-body .sect {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+}
+
+@media (max-width: 1060px) {
+    .main-body .my-skills {
+        font-size: .9rem;
+    }
+
+    .main-body .my-skills h2{
+        font-size: 2rem;
+    }
+
+    .main-body .my-skills {
+        font-weight: 1.2rem;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    .main-body .my-skills .skill-card-cont {
+        flex-direction: column;
+    }
+
+    .main-body .skill-card{
+        width: auto;
+    }
+
+    .main-body .my-skills h2 {
+        font-weight: 2.5rem;
+        text-align: left;
+    }
+
+}
+
+@media (max-width: 992px){
+    .main-body .my-projects {
+        font-weight: 1.2rem;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    .main-body .my-projects h2{
+        font-weight: 2.5rem;
+        text-align: left;
+    }
+
+    .main-body .my-projects ul {
+        justify-content: start;
+        width: auto;
+    }
+
+    .main-body .my-projects ul li {
+        flex-basis: 100%;
+    }
+
+    .my-projects .ul-cont .li-cont .proj-desc {
+        width: 100%;
+    }
+
+    .main-body .my-resume .bg-image-cont {
+        width: 100%;
+    }
+
+    .main-body .my-resume .bg-image-cont .bg-image{
+        object-fit: cover;
+        object-position: bottom;
+    }
+
+    .main-body .my-resume .resume-link-cont {
+        width: 100%;
+        justify-content: start;
+        align-items: start;
+        margin: 0;
+    }
+
+    .main-body .my-resume .bg-image-cont {
+        grid-area: 1 / 1 / 2 / 3;
+    }
+
+    .main-body .my-resume .resume-link-cont {
+        grid-area: 1 / 1 / 2 / 2;
+        color: white;
+        justify-content: center;
+        align-items: start;
+        padding-left: 100px;
+    }
+
+    .main-body .my-resume .resume-link-cont a{
+        color: #9F7ED4;
+    }
+}
+
+
+@media (max-width: 630px){
+    .main-body .sect {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .main-body .my-resume {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
